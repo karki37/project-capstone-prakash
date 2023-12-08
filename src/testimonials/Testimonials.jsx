@@ -1,5 +1,5 @@
-import Hero from "../hero/Hero";
-import styles from "../testimonials/Testimonials.module.css";
+import Hero from "../components/hero/Hero";
+import styles from "./Testimonials.module.css";
 import { TestimonialsData } from "../data/testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -28,7 +28,7 @@ const Testimonials = () => {
           className={styles.tCarousel}
         >
           {TestimonialsData.map((testimonial, i) => {
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <div className={styles.testimonial}>
                 <img src={testimonial.image} alt="" />
                 <span>{testimonial.comment}</span>

@@ -1,5 +1,5 @@
 import styles from '../header/Header.module.css'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   return (
